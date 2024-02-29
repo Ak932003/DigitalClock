@@ -1,0 +1,45 @@
+body{
+    font-family: cursive;
+    overflow: hidden;
+    background: linear-gradient(45deg, #2d7dd2, #97cc04, #33b902, #f45d01, #474647);
+}
+.container{
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.digitalClock{
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: rgba(0 , 0, 0, 0.2);
+}
+.digitalClock h1{
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 5rem;
+}
+@media (max-width: 768px) {
+    #bar1,
+    #bar2{
+        display: none;
+    }
+    .digitalClock{
+        text-align: center;
+        width: 100%;
+    }
+    .digitalClock h1{
+        display: block;
+    }
+}
+@media (max-width: 480px){
+    .digitalClock h1{
+        font-size: 4rem;
+    }
+}
